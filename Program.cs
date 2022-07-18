@@ -8,6 +8,8 @@ double num1 = 0, num2 = 0, num3 = 0, num4 = 0, num5 = 0;
 string operacion;
 double resultado;
 string reinicio = "SI";
+string SALIR = "NO";
+
 
 while (reinicio == "SI")
 {
@@ -19,18 +21,25 @@ while (reinicio == "SI")
     operacion = Console.ReadLine();
 
 
-
+    Console.WriteLine("Digite Numero");
+    string entrada1 = Console.ReadLine();
+    num1 = Convert.ToDouble(!string.IsNullOrEmpty(entrada1) ? entrada1 : 0);
 
     Console.WriteLine("Digite Numero");
-    num1 = Convert.ToDouble(!string.IsNullOrEmpty(Console.ReadLine()) ? Console.ReadLine() : 0);
-    Console.WriteLine("Digite 2do numero");
-    num2 = Convert.ToDouble(!string.IsNullOrEmpty(Console.ReadLine()) ? Console.ReadLine() : 0);
-    Console.WriteLine("Digite 3do numero");
-    num3 = Convert.ToDouble(!string.IsNullOrEmpty(Console.ReadLine()) ? Console.ReadLine() : 0);
-    Console.WriteLine("Digite 4do numero");
-    num4 = Convert.ToDouble(!string.IsNullOrEmpty(Console.ReadLine()) ? Console.ReadLine() : 0);
-    Console.WriteLine("Digite 5do numero");
-    num5 = Convert.ToDouble(!string.IsNullOrEmpty(Console.ReadLine()) ? Console.ReadLine() : 0);
+    string entrada2 = Console.ReadLine();
+    num2 = Convert.ToDouble(!string.IsNullOrEmpty(entrada2) ? entrada2 : 0);
+
+    Console.WriteLine("Digite Numero");
+    string entrada3 = Console.ReadLine();
+    num3 = Convert.ToDouble(!string.IsNullOrEmpty(entrada3) ? entrada3 : 0);
+
+    Console.WriteLine("Digite Numero");
+    string entrada4 = Console.ReadLine();
+    num4 = Convert.ToDouble(!string.IsNullOrEmpty(entrada4) ? entrada4 : 0);
+
+    Console.WriteLine("Digite Numero");
+    string entrada5 = Console.ReadLine();
+    num5 = Convert.ToDouble(!string.IsNullOrEmpty(entrada5) ? entrada5 : 0);
 
     Console.Clear();
 
@@ -61,6 +70,7 @@ while (reinicio == "SI")
 
     Console.WriteLine("OTRA OPERACION?");
     reinicio = Console.ReadLine();
+
 }
 Console.Clear();
 Environment.Exit(0);
